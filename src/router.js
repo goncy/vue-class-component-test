@@ -1,7 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
-import About from "./views/About.vue";
+
+import Computed from "./screens/Computed.js";
+import GraphQL from "./screens/GraphQL.js";
+import Transitions from "./screens/Transitions.js";
 
 Vue.use(Router);
 
@@ -9,13 +11,18 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home
+      name: "computed",
+      component: Computed,
     },
     {
-      path: "/about",
-      name: "about",
-      component: About
-    }
-  ]
+      path: "/graphql",
+      name: "graphql",
+      component: GraphQL,
+    },
+    {
+      path: "/transitions",
+      name: "transitions",
+      component: Transitions,
+    },
+  ],
 });

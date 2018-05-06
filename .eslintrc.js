@@ -4,6 +4,9 @@ module.exports = {
     'plugin:vue/recommended',
     '@vue/prettier'
   ],
+  "env": {
+    "node": true
+  },
   "parserOptions": {
     "parser": "babel-eslint"
   },
